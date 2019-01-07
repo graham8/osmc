@@ -75,7 +75,7 @@ index e3592faf..b901a3d9
 +    attr.append("now");
 +    SysfsUtils::SetString("/sys/class/amhdmitx/amhdmitx0/attr", attr.c_str());
 +  }
- #if defined(HAVE_X11) || defined(TARGET_WINDOWS_DESKTOP)
+ #if defined(HAVE_X11)
   else if (settingId == CSettings::SETTING_VIDEOSCREEN_BLANKDISPLAYS)
   {
 diff --git a/xbmc/settings/Settings.cpp b/xbmc/settings/Settings.cpp

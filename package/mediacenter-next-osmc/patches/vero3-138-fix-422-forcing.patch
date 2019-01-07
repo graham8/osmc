@@ -50,7 +50,7 @@ index fe17f54..f957c31 100644
 +    CLog::Log(LOGDEBUG, "CDisplaySettings::OnSettingChanging -- setting 422 output, attr = %s", attr.c_str());
 +    SysfsUtils::SetString("/sys/class/amhdmitx/amhdmitx0/attr", attr.c_str());
 +  }
- #if defined(HAVE_X11) || defined(TARGET_WINDOWS_DESKTOP)
+ #if defined(HAVE_X11)
    else if (settingId == CSettings::SETTING_VIDEOSCREEN_BLANKDISPLAYS)
    {
 diff --git a/xbmc/settings/Settings.cpp b/xbmc/settings/Settings.cpp
